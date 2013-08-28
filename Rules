@@ -41,6 +41,10 @@ route %r{/assets/(stylesheets|javascripts)/.+/} do
   Nanoc::Helpers::Sprockets.asset_path(item) + '.gz'
 end
 
+route %r{/assets/[^/]+/[^/]+/.+/} do
+  # ignonre sub-folders
+end
+
 route %r{/assets/.+/} do
   Nanoc::Helpers::Sprockets.asset_path(item)
 end

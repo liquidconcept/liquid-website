@@ -1,11 +1,30 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="<%= item[:locale] %>">
   <head>
     <meta charset="utf-8">
-    <title><%= @item[:title] %></title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Liquid Concept - <%= item[:headline] %></title>
+    <link rel="stylesheet" href="<%= stylesheet_path 'application' %>" media="screen">
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
   </head>
+  <header>
+    <section class="links">
+      <article class="customer_area">
+        <p><a href="#"><%= item[:customer_area]%></a></p>
+      </article>
+      <article class="languages">
+        <a href="#">Fr</a> | <a href="#">En</a>
+      </article>
+    </section>
+    <h1><%= item[:headline] %></h1>
+    <h2 class="caption"><%= item[:caption] %></h2>
+    <section class="social_media">
+      <a href="#" class="twitter"></a>
+      <a href="#" class="linkedin"></a>
+      <a href="#" class="facebook"></a>
+      <a href="#" class="github"></a>
+      <a href="#" class="blog"></a>
+    </section>
+  </header>
   <body>
     <div id="main">
       <%= yield %>

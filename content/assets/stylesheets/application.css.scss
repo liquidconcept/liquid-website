@@ -1,6 +1,148 @@
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/typography/text/replacement";
+@import "compass/utilities/general/clearfix";
+
+@import "font";
+
+/* icons */
+@import "social_media/*.png";
+
+@include all-social_media-sprites;
 
 /*----------------------------------------*/
-/*                 FLAG                  */
-/*----------------------------------------*/ 
+/*                COLORS                  */
+/*----------------------------------------*/
+
+$blue: #0078de;
+$grey: #404040;
+
+/*----------------------------------------*/
+/*                DEFAULT                 */
+/*----------------------------------------*/
+
+body {
+	border-top: $blue solid 5px;
+  font-family: Katarine;
+  color: $grey;
+}
+
+a {
+  color: $grey;
+  text-decoration: underline;
+}
+
+/*----------------------------------------*/
+/*                 HEADER                 */
+/*----------------------------------------*/
+
+header {
+  width: 960px;
+  margin: 0 auto;
+
+  .links {
+    @include pie-clearfix;
+
+    .customer_area {
+      float: left;
+      margin-top: 10px;
+    }
+
+    .languages {
+      float: right;
+      margin-top: 10px;
+    }
+  }
+
+  h1 {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 30px;
+    @include replace-text-with-dimensions('logo-liquid-concept.png', 50%, 50%, true);
+  }
+
+  h2.caption {
+    width: 256px;
+    font-size: 1.3em;
+    margin: 10px auto;
+  }
+
+  section.social_media {
+    width: 655px;
+    margin: 0px auto;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px $grey solid;
+    @include pie-clearfix;
+
+    .twitter {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(twitter);
+    }
+
+    .twitter:hover {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(twitter_hover);
+    }
+
+    .linkedin {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(linkedin);
+    }
+
+    .linkedin:hover {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(linkedin_hover);
+    }
+
+    .facebook {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(facebook);
+    }
+
+    .facebook:hover {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(facebook_hover);
+    }
+
+    .github {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(github);
+    }
+
+    .github:hover {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(github_hover);
+    }
+
+    .blog {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(blog);
+    }
+
+    .blog:hover {
+      float: left;
+      width: 131px;
+      height: 99px;
+      @include social_media-sprite(blog_hover);
+    }
+  }
+}

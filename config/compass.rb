@@ -4,10 +4,12 @@
 
 project_path          = '.'
 
-http_path             = '/'
-http_stylesheets_path = '/assets/stylesheets'
-http_javascripts_path = '/assets/javascripts'
-http_images_path      = '/assets/images'
-http_fonts_path       = '/assets/fonts'
-
 images_dir            = 'content/assets/images'
+generated_images_dir  = "content/assets/images"
+
+http_path             = '/'
+http_stylesheets_path = '/assets'
+http_javascripts_path = '/assets'
+http_images_path      = '/assets'
+http_fonts_path       = '/assets'
+http_generated_images_path = '/assets'

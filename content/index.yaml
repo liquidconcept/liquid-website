@@ -1,0 +1,9 @@
+locale:
+  en:
+    headline: Agile development with Ruby and Rails in Lausanne, Switzerland
+    customer_area: customer area
+    caption: Agile development with Ruby
+  fr:
+    headline: Développement agile avec Ruby et Rails à Lausanne, Suisse
+    customer_area: espace client
+    caption: Développement agile avec Ruby
