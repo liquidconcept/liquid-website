@@ -31,5 +31,11 @@ group :development, :test do
 end
 
 group :guard do
+  gem 'guard'
+  gem 'rb-readline'
+
+  gem 'guard-bundler'
+  gem 'guard-livereload'
+  gem 'guard-nanoc'
 end
 
