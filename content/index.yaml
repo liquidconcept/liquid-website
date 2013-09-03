@@ -32,6 +32,7 @@ locale:
     lc_1: From the shores of Lake Geneva, is in a pleasant and relaxed atmosphere that our team has an open space and its layout that promotes communication and teamwork.
     lc_2: It is in this spirit that everyone involved on each project during the review code or programming sessions with others. Each also benefits from flexible hours and two afternoons per month for staff development.
     lc_3: Created by Yann Lugrin, Julien and Olivier Henzelin Amblet end of 2003, the team is now also trained Ludovic Simon Néville and we are joined.
+    clients: Clients
 
   fr:
     headline: Développement agile avec Ruby et Rails à Lausanne, Suisse
@@ -43,8 +44,8 @@ locale:
     since: Depuis 2005 nous sommes
     quote_specialty: spécialisés dans le développement Ruby & Rails
     team: notre équipe est propulsé par Scrum et fait la part belle aux bonnes pratiques du développement informatique telles que les tests automatisés ou la revue de code. Bien que nous soyons du côté technique de la force, nous accordons une grande importance à toujours mettre l'être humain au centre de nos préoccupations quotidiennes.
-    call_us: appeler nous
-    email_us: écriver nous
+    call_us: appelez nous
+    email_us: écrivez nous
     phone_info: heure d'ouverture de <span class="bold">9h à 17h</span>, les jours de travail
     email_info: Jours fermé <span class="bold">24/7</span>
     our_teams: Notre équipe
@@ -66,4 +67,5 @@ locale:
     lc_1: Depuis le bord du lac Léman, c'est dans une ambiance agréable et décontracté que notre équipe jouit d'un open space et de son aménagement qui favorise la communication et le travail en commun. 
     lc_2: C'est dans cet esprit que chacun intervient sur chaque projet lors de la revue du code ou des séances de programmation à plusieurs. Chacun profite également d'horaires flexibles et de deux après-midi par mois pour son développement personnel.
     lc_3: Créé par Yann Lugrin, Julien Henzelin et Olivier Amblet à fin 2003, l'équipe est aujourd'hui également formé de Ludovic, Néville et Simon qui nous on rejoint.
+    clients: Clients
 

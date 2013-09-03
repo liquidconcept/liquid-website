@@ -19,9 +19,12 @@
 /*                COLORS                  */
 /*----------------------------------------*/
 
+$white: #fff;
 $blue: #0078de;
-$grey: #404040;
+$dark_grey: #404040;
+$grey: #777777;
 $light_grey: #D0D0D0;
+$white_grey: #EDEDED;
 
 /*----------------------------------------*/
 /*                DEFAULT                 */
@@ -58,9 +61,18 @@ p {
   font-style: italic;
 }
 
+.line {
+  background: inline-image('line.png') repeat-x;
+  width: 100%;
+  z-index: 1000;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+}
+
 h1 {
   font-size: 54px;
-  color: $grey;
+  color: $dark_grey;
 }
 
 h2 {
@@ -103,7 +115,7 @@ header {
   }
 
   h2.caption {
-    width: 256px;
+    width: 220px;
     font-size: 1.3em;
     margin: 10px auto;
   }
@@ -190,6 +202,8 @@ header {
       }
     }
 
+  /************ CONTACT **************/
+
     section.contact {
       width: 839px;
       margin: 0 auto;
@@ -229,6 +243,8 @@ header {
     }
   }
 
+  /************** TEAM ****************/
+
   section.team {
     position: relative;
 
@@ -239,8 +255,8 @@ header {
 
     article.member {
       width: 900px;
-      margin: 40px auto;
-      margin-bottom: 80px;
+      margin: 0px auto;
+      margin-bottom: 40px;
       @include pie-clearfix;
       position: absolute;
 
@@ -269,6 +285,7 @@ header {
 
           .name {
             font-size: 25px;
+            font-color: $dark_grey;
             margin-bottom: 10px;
           }
 
@@ -278,6 +295,7 @@ header {
 
             span {
               font-size: 18px;
+              font-color: $dark_grey;
             }
           }
 
@@ -294,6 +312,7 @@ header {
     }
 
     article.lc {
+      display: none;
       width: 900px;
       margin: 0 auto;
       p {
@@ -347,6 +366,8 @@ header {
     }
 
     article.jh {
+      display: none;
+
       .social_media {
         .twitter {
           @include small_social_media-sprite(twitter);
@@ -375,6 +396,8 @@ header {
     }
 
     article.lt {
+      display: none;
+
       .social_media {
         .linkedin {
           @include small_social_media-sprite(linkedin);
@@ -397,6 +420,8 @@ header {
     }
 
     article.nd {
+      display: none;
+
       .social_media {
         .linkedin {
           @include small_social_media-sprite(linkedin);
@@ -419,6 +444,8 @@ header {
     }
 
     article.sw {
+      display: none;
+
       .social_media {
         .github {
           @include small_social_media-sprite(github);
@@ -432,7 +459,7 @@ header {
   }
 
   section.nav_team {
-    margin-top: 600px;
+    margin-top: 480px;
 
     article.avatar {
       width: 960px;
@@ -512,12 +539,17 @@ header {
       margin: 10px 0px 50px 0px;
 
       p {
+        color: $dark_grey;
         text-align: center;
         line-height: 24px;
 
         a {
           text-decoration: none;
         }
+      }
+
+      .name > a {
+        color: $dark_grey;
       }
 
       .nickname {
@@ -534,3 +566,83 @@ header {
     }
   }
 }
+
+/*----------------------------------------*/
+/*                 CLIENTS                */
+/*----------------------------------------*/
+
+section.clients {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: $white_grey;
+
+
+  article.content {
+    width: 960px;
+    margin: 0 auto;
+
+    h1 {
+      width: 140px;
+      margin: 40px auto;
+    }
+
+    .clients_important {
+      width: 960px;
+      height: 100px;
+    }
+
+    .clients_less_important {
+      width: 800px;
+      height: 100px;
+      margin: 40px auto;
+    }
+
+    .container_logo {
+      width: 120px;
+      height: 100px;
+      float: left;
+      margin-left: 60px;
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*                 FOOTER                 */
+/*----------------------------------------*/
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: $blue;
+  margin-top: 427px;
+
+  section {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 10px;
+
+    p , a {
+      color: $white;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    a:hover {
+      color: $white;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

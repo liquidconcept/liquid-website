@@ -120,11 +120,30 @@
     <section class="col-md-2"><a href="#" class="sw"></a></section>
   </article>
   <article class="avatar_name row">
-    <section class="col-md-2"><p><a href="#">Intro</a></p><p class="nickname"><a href="#">Liquid Concept</a></p></section>
-    <section class="col-md-2"><p><a href="#">Yann Lugrin</a></p><p class="nickname"><a href="#">Ruby Enthusiastic Officer</a></p></section>
-    <section class="col-md-2"><p><a href="#">Julien Henzelin</a></p><p class="nickname"><a href="#">Chief Executive Maniac</a></p></section>
-    <section class="col-md-2"><p><a href="#">Ludovic Turmel</a></p><p class="nickname"><a href="#">Minimalist Creator</a></p></section>
-    <section class="col-md-2"><p><a href="#">Néville Dubuis</a></p><p class="nickname"><a href="#">Developper Junior</a></p></section>
-    <section class="col-md-2"><p><a href="#">Simon Walter </a></p><p class="nickname"><a href="#">Padawan Level II</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Intro</a></p><p class="nickname"><a href="#">Liquid Concept</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Yann Lugrin</a></p><p class="nickname"><a href="#">Ruby Enthusiastic Officer</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Julien Henzelin</a></p><p class="nickname"><a href="#">Chief Executive Maniac</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Ludovic Turmel</a></p><p class="nickname"><a href="#">Minimalist Creator</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Néville Dubuis</a></p><p class="nickname"><a href="#">Developper Junior</a></p></section>
+    <section class="col-md-2"><p class="name"><a href="#">Simon Walter </a></p><p class="nickname"><a href="#">Padawan Level II</a></p></section>
+  </article>
+</section>
+<div class="line"></div>
+<section class="clients">
+  <article class="content ">
+    <h1><%= item[:clients] %></h1>
+    <div class="clients_important">
+       <div class="container_logo"><img src="<%= image_path('client_claves.png') %>" class="logo" /></div>
+      <div class="container_logo"><img src="<%= image_path('client_neopost.png') %>" class="logo" /></div>
+      <div class="container_logo"><img src="<%= image_path('client_nagra.png') %>" class="logo" /></div>
+      <div class="container_logo"><img src="<%= image_path('client_hep.png') %>" class="logo" /></div>
+      <div class="container_logo"><img src="<%= image_path('client_bcv.png') %>" class="logo" /></div>
+    </div>
+    <div class="clients_less_important row">
+      <div class="container_logo col-md-3"><img src="<%= image_path('client_clarahaskil.png') %>" class="logo" /></div>
+      <div class="container_logo col-md-3"><img src="<%= image_path('client_laurastar.png') %>" class="logo" /></div>
+      <div class="container_logo col-md-3"><img src="<%= image_path('client_webdoc.png') %>" class="logo" /></div>
+      <div class="container_logo col-md-3"><img src="<%= image_path('client_police.png') %>" class="logo" /></div>
+    </div>
   </article>
 </section>
