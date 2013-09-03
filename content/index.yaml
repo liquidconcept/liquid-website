@@ -3,7 +3,67 @@ locale:
     headline: Agile development with Ruby and Rails in Lausanne, Switzerland
     customer_area: customer area
     caption: Agile development with Ruby
+    liquid_is: Liquid Concept is a
+    quote_liquid: agency web application development
+    what: based in Lausanne, Switzerland. We develop agile way of quality web applications for companies who want the technique is the cornerstone of their business and want to put people at the center of their approach through a user experience (UX) quality.
+    since: Since 2005 we are
+    quote_specialty: specialize in developing Ruby & Rails
+    team: Our team is powered by Scrum and gives pride of good software development practices such as automated testing and code review. While we are on the technical side of the force, we attach great importance to always put people at the center of our daily concerns being.
+    call_us: call us
+    email_us: email us
+    phone_info: Opening hours from <span class="bold">9am to 5pm</span> on working days
+    email_info: For closing day <span class="bold">24/7</span>
+    our_teams: Our teams
+    title_yl: Associate
+    nickname_yl: REO (Ruby Enthusiastic Officer)
+    yl: Yann is a founder and partner at Liquid Concept. He started working with Ruby on Rails in 2005 and has more left. He also developed his experience in writing articles for magazines, sharing open source knowledge by publishing various gems and being speaker at events relating to Ruby & Rails. It is today one of the French-speaking experts in architecture web application with Ruby & Rails and agile development. If the route starts on the server side, for him the real added value lies in the user experience and implementation of web service interface to the one who must make use of the remainder is to be at the service of this goal.
+    title_jh: Associate
+    nickname_jh: CEM (Chief Executive Maniac)
+    jh: Julien is the founder and partner at Liquid Concept. It has a crazy quilt profile, first from a business training, he became interested in 2005 in personal organization methods as GTD. He then expanded its expertise to the world of entrepreneurship by participating in the Venture Training organized by the Commision for Technology and Innovation CTI. His interest in the user experience was developed by actively participating in the group UX Romandie allowing inspiration, discussion and improving current techniques. If the journey begins with the traditional project management, Julien believes that the management and conduct of agile project is part of the gains from collaboration with Liquid Concept, today is the main function with the explanation fundamental to customers.
+    title_lt: Frontend Dev
+    nickname_lt: MC (Minimalist Creator)
+    lt: Ludovic after finishing his apprenticeship at Liquid Concept remained in our position to continue its acquisition of knowledge in the wide world of development. After a first experience in the field of computer network, he decides to move in web development. That's when he discovered the universe and Agile Development Ruby & Rails. It now operates in Liquid Concept independently and with pleasure. The pleasure of having to combine creativity and reflection in daily tasks. Its full course allows it to be already ahead of his contemporaries. It represents the second generation of developer "made in" Liquid Concept.
+    title_nd: Backend Dev
+    nickname_nd: DJ (Developer  Junior)
+    nd: Néville has interned twice at Liquid Concept studies for the computer technicians to CPNV​​. It has been gradually become familiar with Ruby and agile methodologies. Today, it has become essential in the development of organic Liquid Concept. Néville is one of those people who are hard-working, quiet and effective. It represents the first generation of developer "made in" Liquid Concept.
+    title_sw: Title
+    nickname_sw: PL2 (Padawan Level II)
+    sw: Simon is at the beginning of his way computer at Liquid Concept.
+    lc_1: From the shores of Lake Geneva, is in a pleasant and relaxed atmosphere that our team has an open space and its layout that promotes communication and teamwork.
+    lc_2: It is in this spirit that everyone involved on each project during the review code or programming sessions with others. Each also benefits from flexible hours and two afternoons per month for staff development.
+    lc_3: Created by Yann Lugrin, Julien and Olivier Henzelin Amblet end of 2003, the team is now also trained Ludovic Simon Néville and we are joined.
+
   fr:
     headline: Développement agile avec Ruby et Rails à Lausanne, Suisse
     customer_area: espace client
     caption: Développement agile avec Ruby
+    liquid_is: Liquid Concept est une
+    quote_liquid: agence de développement d'application web
+    what: basée à Lausanne en Suisse. Nous développons de manière agile des applications web de qualité pour des entreprises qui désirent que la technique soit la clé de voûte de leur business et qui veulent mettre l'humain au centre de leur démarche grâce à une expérience utilisateur (UX) de qualité.
+    since: Depuis 2005 nous sommes
+    quote_specialty: spécialisés dans le développement Ruby & Rails
+    team: notre équipe est propulsé par Scrum et fait la part belle aux bonnes pratiques du développement informatique telles que les tests automatisés ou la revue de code. Bien que nous soyons du côté technique de la force, nous accordons une grande importance à toujours mettre l'être humain au centre de nos préoccupations quotidiennes.
+    call_us: appeler nous
+    email_us: écriver nous
+    phone_info: heure d'ouverture de <span class="bold">9h à 17h</span>, les jours de travail
+    email_info: Jours fermé <span class="bold">24/7</span>
+    our_teams: Notre équipe
+    title_yl: Associé
+    nickname_yl: REO (Ruby Enthusiastic Officer)
+    yl: Yann est fondateur et associé chez Liquid Concept. Il a commencé à travailler avec Ruby on Rails en 2005 et ne l'a plus quitté. Il a également développé son expérience par la rédaction d'articles pour des magazines spécialisés, le partage de connaissances open source en publiant diverses gems et en étant conférencier lors d'événements qui ont trait à Ruby & Rails. Il est aujourd'hui un des experts romands dans l'architecture d'application web avec Ruby & Rails et dans le développement agile. Si son parcours commence coté serveur, pour lui la véritable plus-value réside dans l'expérience utilisateur et la réalisation d'interface web au service de celui qui doit en faire usage ; le reste étant devant se mettre au service de cet objectif.
+    title_jh: Associé
+    nickname_jh: CEM (Chief Executive Maniac)
+    jh: Julien est fondateur et associé chez Liquid Concept. Il a un profil hétéroclyte, d’abord issu d’une formation commerciale, il s’intéresse dès 2005 aux méthodes d’organisation personnelle comme GTD. Il a ensuite étendu son champ d'expertise au monde de l'entreprenariat en participant au Venture Training organisé par la Commision pour la technologie et l'innovation CTI. Son intérêt pour l'expérience utilisateur s’est développé en participant activement au groupe UX Romandie qui permet l’inspiration, la discussion et l’amélioration des techniques actuelles. Si son parcours commence par de la gestion de projet traditionnel, Julien considère que la gestion et la conduite de projet agile fait partie des plus-values d’une collaboration avec Liquid Concept, c’est aujourd’hui sa fonction principale avec l’explication des fondamentaux aux clients.
+    title_lt: Frontend Dev
+    nickname_lt: MC (Minimalist Creator)
+    lt: Ludovic après avoir fini son apprentissage chez Liquid Concept est resté dans nos rang afin de poursuivre son acquisition de connaissance dans le vaste monde du développement. Après une première expérience dans le domaine du réseau informatique, il décide de s'orienter dans le développement web. C'est alors qu'il découvre l'univers Agile et le développement Ruby & Rails. Il évolue aujourd'hui au sein de Liquid Concept de façon autonome et avec plaisir. Le plaisir de devoir allier créativité et réflexion dans les tâches quotidiennes. Son parcours complet lui permet d'être déjà en avance sur ces contemporains. Il représente la deuxième génération de développeur 'made in' Liquid Concept. 
+    title_nd: Backend Dev
+    nickname_nd: DJ (Developer  Junior)
+    nd: Néville a été stagiaire à deux reprises chez Liquid Concept pendant ces études de techniciens en informatique au CPNV. Il a pu petit à petit se familiariser avec Ruby et les méthodologies agiles. Aujourd’hui, il est devenu indispensable dans le développement organique de Liquid Concept. Néville fait partie de ces personnes qui sont assidues, calmes et efficaces. Il représente la première génération de développeur “made in” Liquid Concept.
+    title_sw: Title
+    nickname_sw: PL2 (Padawan Level II)
+    sw: Simon est au début de son chemin en informatique chez Liquid Concept.
+    lc_1: Depuis le bord du lac Léman, c'est dans une ambiance agréable et décontracté que notre équipe jouit d'un open space et de son aménagement qui favorise la communication et le travail en commun. 
+    lc_2: C'est dans cet esprit que chacun intervient sur chaque projet lors de la revue du code ou des séances de programmation à plusieurs. Chacun profite également d'horaires flexibles et de deux après-midi par mois pour son développement personnel.
+    lc_3: Créé par Yann Lugrin, Julien Henzelin et Olivier Amblet à fin 2003, l'équipe est aujourd'hui également formé de Ludovic, Néville et Simon qui nous on rejoint.
+

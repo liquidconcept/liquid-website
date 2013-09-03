@@ -1,0 +1,130 @@
+<section class="intro">
+  <article class="corporate">
+    <p><%= item[:liquid_is] %></p>
+    <p class="quote">"<%= item[:quote_liquid] %>"</p>
+    <p><%= item[:what] %></p>
+    <p class="since"><%= item[:since] %></p>
+    <p class="quote specialty">"<%= item[:quote_specialty] %>"</p>
+    <p><%= item[:team] %></p>
+  </article>
+  <section class="contact">
+    <article class="phone">
+      <h1><%= item[:call_us] %></h1>
+      <h2>+41 21 648 03 41</h2>
+      <p class="info"><%= item[:phone_info]%></p>
+    </article>
+    <article class="email">
+      <h1><%= item[:email_us] %></h1>
+      <h2>info@liquid-concept.ch</h2>
+      <p class="info"><%= item[:email_info]%></p>
+    </article>
+  </section>
+</section>
+<section class="team">
+  <h1><%= item[:our_teams] %></h1>
+  <article class="member lc">
+    <p class="quote"><%= item[:lc_1] %></p>
+    <p><%= item[:lc_2] %></p>
+    <p><%= item[:lc_3] %></p>
+  </article>
+  <article class="member yl">
+    <div class="picture"><img src="<%= image_path('yl.png') %>" /></div>
+    <div class="information">
+      <div class="header">
+        <p class="name">Yann Lugrin</p>
+        <div class="title">
+          <span class="bold"><%= item[:title_yl] %></span> - <span><%= item[:nickname_yl] %></span>
+        </div>
+        <div class="social_media">
+          <a href="#" class="twitter"></a>
+          <a href="#" class="linkedin"></a>
+          <a href="#" class="facebook"></a>
+          <a href="#" class="github"></a>
+        </div>
+      </div>
+      <p class="describe"><%= item[:yl] %></p>
+    </div>
+  </article>
+  <article class="member jh">
+    <div class="picture"><img src="<%= image_path('jh.png') %>" /></div>
+    <div class="information">
+      <div class="header">
+        <p class="name">Julien Henzelin</p>
+        <div class="title">
+          <span class="bold"><%= item[:title_jh] %></span> - <span><%= item[:nickname_jh] %></span>
+        </div>
+        <div class="social_media">
+          <a href="#" class="twitter"></a>
+          <a href="#" class="linkedin"></a>
+          <a href="#" class="facebook"></a>
+        </div>
+      </div>
+      <p class="describe"><%= item[:jh] %></p>
+    </div>
+  </article>
+  <article class="member lt">
+    <div class="picture"><img src="<%= image_path('lt.png') %>" class="lt" /></div>
+    <div class="information">
+      <div class="header">
+        <p class="name">Ludovic Turmel</p>
+        <div class="title">
+          <span class="bold"><%= item[:title_lt] %></span> - <span><%= item[:nickname_lt] %></span>
+        </div>
+        <div class="social_media">
+          <a href="#" class="linkedin"></a>
+          <a href="#" class="github"></a>
+        </div>
+      </div>
+      <p class="describe"><%= item[:lt] %></p>
+    </div>
+  </article>
+  <article class="member nd">
+    <div class="picture"><img src="<%= image_path('nd.png') %>" /></div>
+    <div class="information">
+      <div class="header">
+        <p class="name">Néville Dubuis</p>
+        <div class="title">
+          <span class="bold"><%= item[:title_nd] %></span> - <span><%= item[:nickname_nd] %></span>
+        </div>
+        <div class="social_media">
+          <a href="#" class="linkedin"></a>
+          <a href="#" class="github"></a>
+        </div>
+      </div>
+      <p class="describe"><%= item[:nd] %></p>
+    </div>
+  </article>
+  <article class="member sw">
+    <div class="picture"><img src="<%= image_path('sw.png') %>" class="sw" /></div>
+    <div class="information">
+      <div class="header">
+        <p class="name">Simon Walther</p>
+        <div class="title">
+          <span class="bold"><%= item[:title_sw] %></span> - <span><%= item[:nickname_sw] %></span>
+        </div>
+        <div class="social_media">
+          <a href="#" class="github"></a>
+        </div>
+      </div>
+      <p class="describe"><%= item[:sw] %></p>
+    </div>
+  </article>
+</section>
+<section class="nav_team">
+  <article class="avatar row">
+    <section class="col-md-2"><a href="#" class="lc"></a></section>
+    <section class="col-md-2"><a href="#" class="yl"></a></section>
+    <section class="col-md-2"><a href="#" class="jh"></a></section>
+    <section class="col-md-2"><a href="#" class="lt"></a></section>
+    <section class="col-md-2"><a href="#" class="nd"></a></section>
+    <section class="col-md-2"><a href="#" class="sw"></a></section>
+  </article>
+  <article class="avatar_name row">
+    <section class="col-md-2"><p><a href="#">Intro</a></p><p class="nickname"><a href="#">Liquid Concept</a></p></section>
+    <section class="col-md-2"><p><a href="#">Yann Lugrin</a></p><p class="nickname"><a href="#">Ruby Enthusiastic Officer</a></p></section>
+    <section class="col-md-2"><p><a href="#">Julien Henzelin</a></p><p class="nickname"><a href="#">Chief Executive Maniac</a></p></section>
+    <section class="col-md-2"><p><a href="#">Ludovic Turmel</a></p><p class="nickname"><a href="#">Minimalist Creator</a></p></section>
+    <section class="col-md-2"><p><a href="#">Néville Dubuis</a></p><p class="nickname"><a href="#">Developper Junior</a></p></section>
+    <section class="col-md-2"><p><a href="#">Simon Walter </a></p><p class="nickname"><a href="#">Padawan Level II</a></p></section>
+  </article>
+</section>

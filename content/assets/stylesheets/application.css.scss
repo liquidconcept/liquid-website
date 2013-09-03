@@ -4,11 +4,16 @@
 @import "compass/utilities/general/clearfix";
 
 @import "font";
+@import "bootstrap";
 
-/* icons */
+/* images */
 @import "social_media/*.png";
+@import "small_social_media/*.png";
+@import "avatar/*.png";
 
 @include all-social_media-sprites;
+@include all-small_social_media-sprites;
+@include all-avatar-sprites;
 
 /*----------------------------------------*/
 /*                COLORS                  */
@@ -16,6 +21,7 @@
 
 $blue: #0078de;
 $grey: #404040;
+$light_grey: #D0D0D0;
 
 /*----------------------------------------*/
 /*                DEFAULT                 */
@@ -32,6 +38,36 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color: $blue;
+}
+
+p {
+  font-size: 18px;
+  color: $grey;
+  line-height: 28px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.quote {
+  color: $blue;
+  font-size: 28px;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 54px;
+  color: $grey;
+}
+
+h2 {
+  font-size: 40px;
+  color: $blue;
+}
+
 /*----------------------------------------*/
 /*                 HEADER                 */
 /*----------------------------------------*/
@@ -39,6 +75,7 @@ a {
 header {
   width: 960px;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   .links {
     @include pie-clearfix;
@@ -51,6 +88,10 @@ header {
     .languages {
       float: right;
       margin-top: 10px;
+
+      a {
+        font-size: 18px;
+      }
     }
   }
 
@@ -72,77 +113,424 @@ header {
     margin: 0px auto;
     margin-top: 80px;
     padding-bottom: 40px;
-    border-bottom: 1px $grey solid;
+    border-bottom: 1px $light_grey solid;
     @include pie-clearfix;
 
-    .twitter {
+    a {
       float: left;
       width: 131px;
       height: 99px;
+    }
+
+    .twitter {
       @include social_media-sprite(twitter);
     }
 
     .twitter:hover {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(twitter_hover);
     }
 
     .linkedin {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(linkedin);
     }
 
     .linkedin:hover {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(linkedin_hover);
     }
 
     .facebook {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(facebook);
     }
 
     .facebook:hover {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(facebook_hover);
     }
 
     .github {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(github);
     }
 
     .github:hover {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(github_hover);
     }
 
     .blog {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(blog);
     }
 
     .blog:hover {
-      float: left;
-      width: 131px;
-      height: 99px;
       @include social_media-sprite(blog_hover);
+    }
+  }
+}
+
+/*----------------------------------------*/
+/*                 CONTENT                */
+/*----------------------------------------*/
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+
+  section.intro {
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    @include pie-clearfix;
+
+    article.corporate {
+      margin-bottom: 60px;
+
+      p {
+        text-align: center;
+      }
+
+      .since {
+        margin-top: 40px;
+      }
+    }
+
+    section.contact {
+      width: 839px;
+      margin: 0 auto;
+      padding-left: 20px;
+      @include pie-clearfix;
+
+      .info {
+        font-size: 15px;
+      }
+
+      h1, h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      article.phone {
+        width: 398px;
+        float: left;
+        padding-right: 20px;
+        border-right: $light_grey 1px solid;
+
+        .info {
+          width: 290px;
+          margin: 0 auto;
+        }
+      }
+
+      article.email {
+        float: left;
+        padding-left: 60px;
+
+        .info {
+          width: 120px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  section.team {
+    position: relative;
+
+    h1 {
+      width: 290px;
+      margin: 30px auto;
+    }
+
+    article.member {
+      width: 900px;
+      margin: 40px auto;
+      margin-bottom: 80px;
+      @include pie-clearfix;
+      position: absolute;
+
+      .picture {
+        width: 300px;
+        float: left;
+      }
+
+      img.lt {
+        margin-left: 80px;
+      }
+
+      img.sw {
+        margin-left: 30px;
+      }
+
+      .information {
+        width: 560px;
+        padding-left: 40px;
+        float: right;
+        @include pie-clearfix;
+
+        .header {
+          border-bottom: $light_grey solid 1px;
+          padding-bottom: 40px;
+
+          .name {
+            font-size: 25px;
+            margin-bottom: 10px;
+          }
+
+          .title {
+            float: left;
+            margin-bottom: 10px;
+
+            span {
+              font-size: 18px;
+            }
+          }
+
+          .social_media {
+            float: right;
+            margin-top: -20px;
+          }
+        }
+
+        .describe {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    article.lc {
+      width: 900px;
+      margin: 0 auto;
+      p {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+
+    .social_media {
+      a {
+        float: left;
+        width: 50px;
+        height: 40px;
+      }
+    }
+
+    article.yl {
+      .social_media {
+        .twitter {
+          @include small_social_media-sprite(twitter);
+        }
+
+        .twitter:hover {
+          @include small_social_media-sprite(twitter_hover);
+        }
+
+        .linkedin {
+          @include small_social_media-sprite(linkedin);
+        }
+
+        .linkedin:hover {
+          @include small_social_media-sprite(linkedin_hover);
+        }
+
+        .facebook {
+          @include small_social_media-sprite(facebook);
+        }
+
+        .facebook:hover {
+          @include small_social_media-sprite(facebook_hover);
+        }
+
+        .github {
+          @include small_social_media-sprite(github);
+        }
+
+        .github:hover {
+          @include small_social_media-sprite(github_hover);
+        }
+      }
+    }
+
+    article.jh {
+      .social_media {
+        .twitter {
+          @include small_social_media-sprite(twitter);
+        }
+
+        .twitter:hover {
+          @include small_social_media-sprite(twitter_hover);
+        }
+
+        .linkedin {
+          @include small_social_media-sprite(linkedin);
+        }
+
+        .linkedin:hover {
+          @include small_social_media-sprite(linkedin_hover);
+        }
+
+        .facebook {
+          @include small_social_media-sprite(facebook);
+        }
+
+        .facebook:hover {
+          @include small_social_media-sprite(facebook_hover);
+        }
+      }
+    }
+
+    article.lt {
+      .social_media {
+        .linkedin {
+          @include small_social_media-sprite(linkedin);
+        }
+
+        .linkedin:hover {
+          @include small_social_media-sprite(linkedin_hover);
+        }
+
+        .github {
+          margin-left: 10px;
+          @include small_social_media-sprite(github);
+        }
+
+        .github:hover {
+          margin-left: 10px;
+          @include small_social_media-sprite(github_hover);
+        }
+      }
+    }
+
+    article.nd {
+      .social_media {
+        .linkedin {
+          @include small_social_media-sprite(linkedin);
+        }
+
+        .linkedin:hover {
+          @include small_social_media-sprite(linkedin_hover);
+        }
+
+        .github {
+          margin-left: 10px;
+          @include small_social_media-sprite(github);
+        }
+
+        .github:hover {
+          margin-left: 10px;
+          @include small_social_media-sprite(github_hover);
+        }
+      }
+    }
+
+    article.sw {
+      .social_media {
+        .github {
+          @include small_social_media-sprite(github);
+        }
+
+        .github:hover {
+          @include small_social_media-sprite(github_hover);
+        }
+      }
+    }
+  }
+
+  section.nav_team {
+    margin-top: 600px;
+
+    article.avatar {
+      width: 960px;
+
+      section {
+        a {
+          width: 100px;
+          height: 110px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+
+      .lc {
+        margin-left: 40px;
+        @include avatar-sprite(lc);
+      }
+
+      .lc:hover {
+        margin-left: 40px;
+        @include avatar-sprite(lc_hover);
+      }
+
+      .yl {
+        margin-left: 30px;
+        @include avatar-sprite(yl);
+      }
+
+      .yl:hover {
+        margin-left: 30px;
+        @include avatar-sprite(yl_hover);
+      }
+
+      .jh {
+        margin-left: 30px;
+        @include avatar-sprite(jh);
+      }
+
+      .jh:hover {
+        margin-left: 30px;
+        @include avatar-sprite(jh_hover);
+      }
+
+      .lt {
+        margin-left: 30px;
+        @include avatar-sprite(lt);
+      }
+
+      .lt:hover {
+        margin-left: 30px;
+        @include avatar-sprite(lt_hover);
+      }
+
+      .nd {
+        margin-left: 30px;
+        @include avatar-sprite(nd);
+      }
+
+      .nd:hover {
+        margin-left: 30px;
+        @include avatar-sprite(nd_hover);
+      }
+
+      .sw {
+        margin-left: 15px;
+        @include avatar-sprite(sw);
+      }
+
+      .sw:hover {
+        margin-left: 15px;
+        @include avatar-sprite(sw_hover);
+      }
+    }
+
+    article.avatar_name {
+      width: 960px;
+      margin: 10px 0px 50px 0px;
+
+      p {
+        text-align: center;
+        line-height: 24px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      .nickname {
+        font-size: 13px;
+      }
+
+      .col-md-2 {
+        border-left: solid $light_grey 1px;
+      }
+
+      .col-md-2:first {
+        border-left: none;
+      }
     }
   }
 }
