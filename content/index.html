@@ -21,111 +21,125 @@
   </section>
 </section>
 <section class="team">
+  <nav class="previous"><a href="#"></a></nav>
   <h1><%= item[:our_teams] %></h1>
-  <article class="member lc">
-    <p class="quote"><%= item[:lc_1] %></p>
-    <p><%= item[:lc_2] %></p>
-    <p><%= item[:lc_3] %></p>
-  </article>
-  <article class="member yl">
-    <div class="picture"><img src="<%= image_path('yl.png') %>" /></div>
-    <div class="information">
-      <div class="header">
-        <p class="name">Yann Lugrin</p>
-        <div class="title">
-          <span class="bold"><%= item[:title_yl] %></span> - <span><%= item[:nickname_yl] %></span>
+  <section class="members">
+    <article class="member lc">
+      <p class="quote"><%= item[:lc_1] %></p>
+      <p><%= item[:lc_2] %></p>
+      <p><%= item[:lc_3] %></p>
+    </article>
+    <article class="member yl">
+      <div class="picture"><img src="<%= image_path('yl.png') %>" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Yann Lugrin</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_yl] %></span> - <span><%= item[:nickname_yl] %></span>
+          </div>
+          <div class="social_media">
+            <a href="#" class="twitter"></a>
+            <a href="#" class="linkedin"></a>
+            <a href="#" class="facebook"></a>
+            <a href="#" class="github"></a>
+          </div>
         </div>
-        <div class="social_media">
-          <a href="#" class="twitter"></a>
-          <a href="#" class="linkedin"></a>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="github"></a>
-        </div>
+        <p class="describe"><%= item[:yl] %></p>
       </div>
-      <p class="describe"><%= item[:yl] %></p>
-    </div>
-  </article>
-  <article class="member jh">
-    <div class="picture"><img src="<%= image_path('jh.png') %>" /></div>
-    <div class="information">
-      <div class="header">
-        <p class="name">Julien Henzelin</p>
-        <div class="title">
-          <span class="bold"><%= item[:title_jh] %></span> - <span><%= item[:nickname_jh] %></span>
+    </article>
+    <article class="member jh">
+      <div class="picture"><img src="<%= image_path('jh.png') %>" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Julien Henzelin</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_jh] %></span> - <span><%= item[:nickname_jh] %></span>
+          </div>
+          <div class="social_media">
+            <a href="#" class="twitter"></a>
+            <a href="#" class="linkedin"></a>
+            <a href="#" class="facebook"></a>
+          </div>
         </div>
-        <div class="social_media">
-          <a href="#" class="twitter"></a>
-          <a href="#" class="linkedin"></a>
-          <a href="#" class="facebook"></a>
-        </div>
+        <p class="describe"><%= item[:jh] %></p>
       </div>
-      <p class="describe"><%= item[:jh] %></p>
-    </div>
-  </article>
-  <article class="member lt">
-    <div class="picture"><img src="<%= image_path('lt.png') %>" class="lt" /></div>
-    <div class="information">
-      <div class="header">
-        <p class="name">Ludovic Turmel</p>
-        <div class="title">
-          <span class="bold"><%= item[:title_lt] %></span> - <span><%= item[:nickname_lt] %></span>
+    </article>
+    <article class="member lt">
+      <div class="picture"><img src="<%= image_path('lt.png') %>" class="lt" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Ludovic Turmel</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_lt] %></span> - <span><%= item[:nickname_lt] %></span>
+          </div>
+          <div class="social_media">
+            <a href="#" class="linkedin"></a>
+            <a href="#" class="github"></a>
+          </div>
         </div>
-        <div class="social_media">
-          <a href="#" class="linkedin"></a>
-          <a href="#" class="github"></a>
-        </div>
+        <p class="describe"><%= item[:lt] %></p>
       </div>
-      <p class="describe"><%= item[:lt] %></p>
-    </div>
-  </article>
-  <article class="member nd">
-    <div class="picture"><img src="<%= image_path('nd.png') %>" /></div>
-    <div class="information">
-      <div class="header">
-        <p class="name">Néville Dubuis</p>
-        <div class="title">
-          <span class="bold"><%= item[:title_nd] %></span> - <span><%= item[:nickname_nd] %></span>
+    </article>
+    <article class="member nd">
+      <div class="picture"><img src="<%= image_path('nd.png') %>" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Néville Dubuis</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_nd] %></span> - <span><%= item[:nickname_nd] %></span>
+          </div>
+          <div class="social_media">
+            <a href="#" class="linkedin"></a>
+            <a href="#" class="github"></a>
+          </div>
         </div>
-        <div class="social_media">
-          <a href="#" class="linkedin"></a>
-          <a href="#" class="github"></a>
-        </div>
+        <p class="describe"><%= item[:nd] %></p>
       </div>
-      <p class="describe"><%= item[:nd] %></p>
-    </div>
-  </article>
-  <article class="member sw">
-    <div class="picture"><img src="<%= image_path('sw.png') %>" class="sw" /></div>
-    <div class="information">
-      <div class="header">
-        <p class="name">Simon Walther</p>
-        <div class="title">
-          <span class="bold"><%= item[:title_sw] %></span> - <span><%= item[:nickname_sw] %></span>
+    </article>
+    <article class="member sw">
+      <div class="picture"><img src="<%= image_path('sw.png') %>" class="sw" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Simon Walther</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_sw] %></span> - <span><%= item[:nickname_sw] %></span>
+          </div>
+          <div class="social_media">
+            <a href="#" class="github"></a>
+          </div>
         </div>
-        <div class="social_media">
-          <a href="#" class="github"></a>
-        </div>
+        <p class="describe"><%= item[:sw] %></p>
       </div>
-      <p class="describe"><%= item[:sw] %></p>
-    </div>
-  </article>
+    </article>
+  </section>
+  <nav class="next"><a href="#"></a></nav>
 </section>
 <section class="nav_team">
   <article class="avatar row">
-    <section class="col-md-2"><a href="#" class="lc"></a></section>
-    <section class="col-md-2"><a href="#" class="yl"></a></section>
-    <section class="col-md-2"><a href="#" class="jh"></a></section>
-    <section class="col-md-2"><a href="#" class="lt"></a></section>
-    <section class="col-md-2"><a href="#" class="nd"></a></section>
-    <section class="col-md-2"><a href="#" class="sw"></a></section>
-  </article>
-  <article class="avatar_name row">
-    <section class="col-md-2"><p class="name"><a href="#">Intro</a></p><p class="nickname"><a href="#">Liquid Concept</a></p></section>
-    <section class="col-md-2"><p class="name"><a href="#">Yann Lugrin</a></p><p class="nickname"><a href="#">Ruby Enthusiastic Officer</a></p></section>
-    <section class="col-md-2"><p class="name"><a href="#">Julien Henzelin</a></p><p class="nickname"><a href="#">Chief Executive Maniac</a></p></section>
-    <section class="col-md-2"><p class="name"><a href="#">Ludovic Turmel</a></p><p class="nickname"><a href="#">Minimalist Creator</a></p></section>
-    <section class="col-md-2"><p class="name"><a href="#">Néville Dubuis</a></p><p class="nickname"><a href="#">Developper Junior</a></p></section>
-    <section class="col-md-2"><p class="name"><a href="#">Simon Walter </a></p><p class="nickname"><a href="#">Padawan Level II</a></p></section>
+    <div class="col-md-2 active">
+      <a href="#" class="lc" data-avatar-value="lc"></a>
+      <div data-avatar-value="lc"><p class="name">Intro</p><p class="nickname">Liquid Concept</p></div>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="yl" data-avatar-value="yl"></a>
+      <div class="border" data-avatar-value="yl"><p class="name">Yann Lugrin</p><p class="nickname">Ruby Enthusiastic Officer</p></div>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="jh" data-avatar-value="jh"></a>
+      <div class="border" data-avatar-value="jh"><p class="name">Julien Henzelin</p><p class="nickname">Chief Executive Maniac</p></div>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="lt" data-avatar-value="lt"></a>
+      <div class="border" data-avatar-value="lt"><p class="name">Ludovic Turmel</p><p class="nickname">Minimalist Creator</p></div>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="nd" data-avatar-value="nd"></a>
+      <div class="border" data-avatar-value="nd"><p class="name">Néville Dubuis</p><p class="nickname">Developper Junior</p></div>
+    </div>
+    <div class="col-md-2">
+      <a href="#" class="sw" data-avatar-value="sw"></a>
+      <div class="border" data-avatar-value="sw"><p class="name">Simon Walter</p><p class="nickname">Padawan Level II</p></div>
+    </div>
   </article>
 </section>
 <div class="line"></div>

@@ -10,10 +10,12 @@
 @import "social_media/*.png";
 @import "small_social_media/*.png";
 @import "avatar/*.png";
+@import "arrows/*.png";
 
 @include all-social_media-sprites;
 @include all-small_social_media-sprites;
 @include all-avatar-sprites;
+@include all-arrows-sprites;
 
 /*----------------------------------------*/
 /*                COLORS                  */
@@ -246,230 +248,343 @@ header {
   /************** TEAM ****************/
 
   section.team {
+    height: 600px;
     position: relative;
 
+    nav {
+      display: block;
+      position: absolute;
+
+      a {
+        display: block;
+        width: 51px;
+        height: 71px;
+        cursor: pointer;
+      }
+    }
+
+    nav.previous {
+      left: -51px;
+      top: 200px;
+      z-index: 1000;
+    }
+
+    nav.next {
+      right: -51px;
+      top: 200px;
+      z-index: 1000;
+    }
+
+    nav.previous > a {
+      @include arrows-sprite(arrow_previous);
+    }
+
+    nav.previous > a:hover {
+      @include arrows-sprite(arrow_previous_hover);
+    }
+
+    nav.next > a {
+      @include arrows-sprite(arrow_next);
+    }
+
+    nav.next > a:hover {
+      @include arrows-sprite(arrow_next_hover);
+    }
+
     h1 {
-      width: 290px;
+      width: 265px;
       margin: 30px auto;
     }
 
-    article.member {
-      width: 900px;
-      margin: 0px auto;
-      margin-bottom: 40px;
-      @include pie-clearfix;
-      position: absolute;
 
-      .picture {
-        width: 300px;
-        float: left;
-      }
+    section.members {
+      width: 930px;
+      height: 600px;
+      margin-left: 30px;
+      position: relative;
+      overflow: hidden;
 
-      img.lt {
-        margin-left: 80px;
-      }
-
-      img.sw {
-        margin-left: 30px;
-      }
-
-      .information {
-        width: 560px;
-        padding-left: 40px;
-        float: right;
+      article.member {
+        width: 900px;
+        margin: 0px auto;
+        margin-bottom: 40px;
         @include pie-clearfix;
+        position: absolute;
 
-        .header {
-          border-bottom: $light_grey solid 1px;
-          padding-bottom: 40px;
+        .picture {
+          width: 300px;
+          float: left;
+          padding-left: 30px;
+        }
 
-          .name {
-            font-size: 25px;
-            font-color: $dark_grey;
-            margin-bottom: 10px;
-          }
+        img.lt {
+          margin-left: 80px;
+        }
 
-          .title {
-            float: left;
-            margin-bottom: 10px;
+        img.sw {
+          margin-left: 30px;
+        }
 
-            span {
-              font-size: 18px;
+        .information {
+          width: 560px;
+          padding-left: 40px;
+          float: right;
+          @include pie-clearfix;
+
+          .header {
+            border-bottom: $light_grey solid 1px;
+            padding-bottom: 40px;
+
+            .name {
+              font-size: 25px;
               font-color: $dark_grey;
+              margin-bottom: 10px;
+            }
+
+            .title {
+              float: left;
+              margin-bottom: 10px;
+
+              span {
+                font-size: 18px;
+                font-color: $dark_grey;
+              }
+            }
+
+            .social_media {
+              float: right;
+              margin-top: -20px;
             }
           }
 
-          .social_media {
-            float: right;
-            margin-top: -20px;
+          .describe {
+            margin-top: 20px;
           }
         }
+      }
 
-        .describe {
-          margin-top: 20px;
+      article.lc {
+        width: 900px;
+        margin: 40px auto;
+        display: block;
+
+        p {
+          text-align: center;
+          margin-bottom: 30px;
         }
       }
-    }
-
-    article.lc {
-      display: none;
-      width: 900px;
-      margin: 0 auto;
-      p {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-    }
-
-    .social_media {
-      a {
-        float: left;
-        width: 50px;
-        height: 40px;
-      }
-    }
-
-    article.yl {
-      .social_media {
-        .twitter {
-          @include small_social_media-sprite(twitter);
-        }
-
-        .twitter:hover {
-          @include small_social_media-sprite(twitter_hover);
-        }
-
-        .linkedin {
-          @include small_social_media-sprite(linkedin);
-        }
-
-        .linkedin:hover {
-          @include small_social_media-sprite(linkedin_hover);
-        }
-
-        .facebook {
-          @include small_social_media-sprite(facebook);
-        }
-
-        .facebook:hover {
-          @include small_social_media-sprite(facebook_hover);
-        }
-
-        .github {
-          @include small_social_media-sprite(github);
-        }
-
-        .github:hover {
-          @include small_social_media-sprite(github_hover);
-        }
-      }
-    }
-
-    article.jh {
-      display: none;
 
       .social_media {
-        .twitter {
-          @include small_social_media-sprite(twitter);
-        }
-
-        .twitter:hover {
-          @include small_social_media-sprite(twitter_hover);
-        }
-
-        .linkedin {
-          @include small_social_media-sprite(linkedin);
-        }
-
-        .linkedin:hover {
-          @include small_social_media-sprite(linkedin_hover);
-        }
-
-        .facebook {
-          @include small_social_media-sprite(facebook);
-        }
-
-        .facebook:hover {
-          @include small_social_media-sprite(facebook_hover);
+        a {
+          float: left;
+          width: 50px;
+          height: 40px;
         }
       }
-    }
 
-    article.lt {
-      display: none;
+      article.yl {
+        display: none;
 
-      .social_media {
-        .linkedin {
-          @include small_social_media-sprite(linkedin);
-        }
+        .social_media {
+          .twitter {
+            @include small_social_media-sprite(twitter);
+          }
 
-        .linkedin:hover {
-          @include small_social_media-sprite(linkedin_hover);
-        }
+          .twitter:hover {
+            @include small_social_media-sprite(twitter_hover);
+          }
 
-        .github {
-          margin-left: 10px;
-          @include small_social_media-sprite(github);
-        }
+          .linkedin {
+            @include small_social_media-sprite(linkedin);
+          }
 
-        .github:hover {
-          margin-left: 10px;
-          @include small_social_media-sprite(github_hover);
-        }
-      }
-    }
+          .linkedin:hover {
+            @include small_social_media-sprite(linkedin_hover);
+          }
 
-    article.nd {
-      display: none;
+          .facebook {
+            @include small_social_media-sprite(facebook);
+          }
 
-      .social_media {
-        .linkedin {
-          @include small_social_media-sprite(linkedin);
-        }
+          .facebook:hover {
+            @include small_social_media-sprite(facebook_hover);
+          }
 
-        .linkedin:hover {
-          @include small_social_media-sprite(linkedin_hover);
-        }
+          .github {
+            @include small_social_media-sprite(github);
+          }
 
-        .github {
-          margin-left: 10px;
-          @include small_social_media-sprite(github);
-        }
-
-        .github:hover {
-          margin-left: 10px;
-          @include small_social_media-sprite(github_hover);
+          .github:hover {
+            @include small_social_media-sprite(github_hover);
+          }
         }
       }
-    }
 
-    article.sw {
-      display: none;
+      article.jh {
+        display: none;
 
-      .social_media {
-        .github {
-          @include small_social_media-sprite(github);
+        .social_media {
+          .twitter {
+            @include small_social_media-sprite(twitter);
+          }
+
+          .twitter:hover {
+            @include small_social_media-sprite(twitter_hover);
+          }
+
+          .linkedin {
+            @include small_social_media-sprite(linkedin);
+          }
+
+          .linkedin:hover {
+            @include small_social_media-sprite(linkedin_hover);
+          }
+
+          .facebook {
+            @include small_social_media-sprite(facebook);
+          }
+
+          .facebook:hover {
+            @include small_social_media-sprite(facebook_hover);
+          }
         }
+      }
 
-        .github:hover {
-          @include small_social_media-sprite(github_hover);
+      article.lt {
+        display: none;
+
+        .social_media {
+          .linkedin {
+            @include small_social_media-sprite(linkedin);
+          }
+
+          .linkedin:hover {
+            @include small_social_media-sprite(linkedin_hover);
+          }
+
+          .github {
+            margin-left: 10px;
+            @include small_social_media-sprite(github);
+          }
+
+          .github:hover {
+            margin-left: 10px;
+            @include small_social_media-sprite(github_hover);
+          }
+        }
+      }
+
+      article.nd {
+        display: none;
+
+        .social_media {
+          .linkedin {
+            @include small_social_media-sprite(linkedin);
+          }
+
+          .linkedin:hover {
+            @include small_social_media-sprite(linkedin_hover);
+          }
+
+          .github {
+            margin-left: 10px;
+            @include small_social_media-sprite(github);
+          }
+
+          .github:hover {
+            margin-left: 10px;
+            @include small_social_media-sprite(github_hover);
+          }
+        }
+      }
+
+      article.sw {
+        display: none;
+
+        .social_media {
+          .github {
+            @include small_social_media-sprite(github);
+          }
+
+          .github:hover {
+            @include small_social_media-sprite(github_hover);
+          }
         }
       }
     }
   }
 
   section.nav_team {
-    margin-top: 480px;
+    margin: 10px 0px 80px 0px;
 
     article.avatar {
       width: 960px;
 
-      section {
+      div.col-md-2 {
+        height: 180px;
+
         a {
           width: 100px;
           height: 110px;
           display: block;
-          margin: 0 auto;
+        }
+
+        p {
+          color: $dark_grey;
+          line-height: 15px;
+          font-size: 18px;
+          text-align: center;
+          padding-left: 20px;
+          margin: 10px auto;
+
+          a {
+            text-decoration: none;
+          }
+        }
+
+        .nickname {
+          width: 150px;
+          margin-left: -10px;
+          font-size: 13px;
+          color: $grey;
+        }
+
+        .border {
+          border-left: solid $light_grey 1px;
+
+          .name {
+            color: $dark_grey;
+          }
+        }
+      }
+
+      div.col-md-2.active {
+        .lc {
+          @include avatar-sprite(lc_hover);
+        }
+
+        .yl {
+          @include avatar-sprite(yl_hover);
+        }
+
+        .jh {
+          @include avatar-sprite(jh_hover);
+        }
+
+        .lt {
+          @include avatar-sprite(lt_hover);
+        }
+
+        .nd {
+          @include avatar-sprite(nd_hover);
+        }
+
+        .sw {
+          @include avatar-sprite(sw_hover);
+        }
+
+        p {
+          color: $blue!important;
         }
       }
 
@@ -533,37 +648,6 @@ header {
         @include avatar-sprite(sw_hover);
       }
     }
-
-    article.avatar_name {
-      width: 960px;
-      margin: 10px 0px 50px 0px;
-
-      p {
-        color: $dark_grey;
-        text-align: center;
-        line-height: 24px;
-
-        a {
-          text-decoration: none;
-        }
-      }
-
-      .name > a {
-        color: $dark_grey;
-      }
-
-      .nickname {
-        font-size: 13px;
-      }
-
-      .col-md-2 {
-        border-left: solid $light_grey 1px;
-      }
-
-      .col-md-2:first {
-        border-left: none;
-      }
-    }
   }
 }
 
@@ -577,14 +661,14 @@ section.clients {
   left: 0px;
   background-color: $white_grey;
 
-
   article.content {
     width: 960px;
     margin: 0 auto;
 
     h1 {
       width: 140px;
-      margin: 40px auto;
+      margin: 0 auto;
+      margin-top: 40px;
     }
 
     .clients_important {
@@ -595,7 +679,7 @@ section.clients {
     .clients_less_important {
       width: 800px;
       height: 100px;
-      margin: 40px auto;
+      margin: 60px auto;
     }
 
     .container_logo {
@@ -616,7 +700,7 @@ footer {
   position: absolute;
   left: 0px;
   background-color: $blue;
-  margin-top: 427px;
+  margin-top: 437px;
 
   section {
     width: 300px;
