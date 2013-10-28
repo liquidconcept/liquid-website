@@ -264,13 +264,13 @@ header {
     }
 
     nav.previous {
-      left: -51px;
+      left: 0px;
       top: 200px;
       z-index: 1000;
     }
 
     nav.next {
-      right: -51px;
+      right: 0px;
       top: 200px;
       z-index: 1000;
     }
@@ -296,18 +296,16 @@ header {
       margin: 30px auto;
     }
 
-
     section.members {
-      width: 930px;
+      width: 870px;
       height: 600px;
-      margin-left: 30px;
+      margin: 0px auto;
       position: relative;
       overflow: hidden;
 
       article.member {
-        width: 900px;
-        margin: 0px auto;
-        margin-bottom: 40px;
+        width: 840px;
+        margin: 40px 0px 0px 10px;
         @include pie-clearfix;
         position: absolute;
 
@@ -326,7 +324,7 @@ header {
         }
 
         .information {
-          width: 560px;
+          width: 540px;
           padding-left: 40px;
           float: right;
           @include pie-clearfix;
@@ -364,8 +362,8 @@ header {
       }
 
       article.lc {
-        width: 900px;
-        margin: 40px auto;
+        width: 840px;
+        margin: 40px 0px 0px 10px;
         display: block;
 
         p {
