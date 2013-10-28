@@ -44,8 +44,8 @@ locale:
     since: Depuis 2005 nous sommes
     quote_specialty: spécialisés dans le développement Ruby & Rails
     team: notre équipe est propulsé par Scrum et fait la part belle aux bonnes pratiques du développement informatique telles que les tests automatisés ou la revue de code. Bien que nous soyons du côté technique de la force, nous accordons une grande importance à toujours mettre l'être humain au centre de nos préoccupations quotidiennes.
-    call_us: appelez nous
-    email_us: écrivez nous
+    call_us: appelez-nous
+    email_us: écrivez-nous
     phone_info: heure d'ouverture de <span class="bold">9h à 17h</span>, les jours de travail
     email_info: Jours fermé <span class="bold">24/7</span>
     our_teams: Notre équipe
