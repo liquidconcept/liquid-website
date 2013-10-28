@@ -1,10 +1,31 @@
 // =require jquery
 // =require jquery-ui
 // =require jquery.h5validate
+//= require moment
 // =require underscore
 //= require slider
 
 (function($, undefined) {
+
+  var isOfficeOpen = function() {
+    // set UTC 2
+    // moment().zone(120);
+
+    var hour = moment().hour();
+    var day = moment().day();
+    var date = moment().format('L');
+    var week_of_year = moment().week();
+
+    if((day === 6) || (day === 0)) {
+      return false;
+    } else if((hour < 9) || (hour > 16)) {
+      return false;
+    } else if((week_of_year % 2 == 0) && (day === 5)) {
+      return false;
+    }
+
+    return true;
+  }
 
   var menuAvatar = function() {
     var active_avatar = $('.avatar').find('a.active');
@@ -25,6 +46,12 @@
 
   // init function
   $(function(){
+    if (isOfficeOpen()) {
+      $('article.email').css('opacity', '0.3');
+    } else {
+      $('article.phone').css('opacity', '0.3');
+    }
+
     menuAvatar();
 
     // init slider
