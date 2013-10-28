@@ -1,4 +1,6 @@
 @font-face {
-  font-family: Katarine;
-  src: url('./fonts/Katarine-3-Light.otf');
+  font-family: 'katarine';
+  src: url('katarine-eot.eot');
+  src: url('katarine-woff.woff') format('woff'), 
+       url('katarine-ttf.ttf')  format('truetype');
 }
