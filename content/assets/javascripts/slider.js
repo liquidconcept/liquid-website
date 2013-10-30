@@ -30,9 +30,12 @@ _.extend(Slider.prototype, {
       var index = $(this).parent().siblings().andSelf().index($(this).parent());
 
       var next_item = $('.member').slice(index, index + 1);
-
-      that.slide(next_item);
+      
+      if ($(window).width() < 960) {} else {
+        that.slide(next_item);
+      }
     });
+
 
     // bind arrows click
     $('nav.next, nav.previous').on('click', function(event) {

@@ -19,6 +19,10 @@
       <p class="info"><%= item[:email_info]%></p>
     </article>
   </section>
+  <article class="find_us">
+    <h1><%= item[:find_us] %></h1>
+    <p><a href="https://maps.google.ch/maps?q=rue+maupas+19&hl=de&sll=47.365396,8.524963&sspn=0.011525,0.01708&hnear=Rue+du+Maupas+19,+1004+Lausanne,+Vaud&t=m&z=16&iwloc=A" target="parent">Rue du maupas 19 1004 Lausanne</a></p>
+  </article>
 </section>
 <section class="team">
   <nav class="previous"><a href="#"></a></nav>
@@ -70,11 +74,11 @@
         <div class="header">
           <p class="name">Ludovic Turmel</p>
           <div class="title">
-            <span class="bold"><%= item[:title_lt] %></span> - <span><%= item[:nickname_lt] %></span>
+            <span class="bold"><%= item[:title_lt] %></span><span><%= item[:nickname_lt] %></span>
           </div>
           <div class="social_media">
-            <a href="http://www.linkedin.com/profile/view?id=284620713" target="_blank" class="linkedin"></a>
-            <a href="https://github.com/NevilleDubuis" target="_blank" class="github"></a>
+            <a href="http://www.linkedin.com/profile/view?id=216663091" target="_blank" class="linkedin"></a>
+            <a href="https://github.com/ludovicturmel" target="_blank" class="github"></a>
           </div>
         </div>
         <p class="describe"><%= item[:lt] %></p>
@@ -86,11 +90,11 @@
         <div class="header">
           <p class="name">Néville Dubuis</p>
           <div class="title">
-            <span class="bold"><%= item[:title_nd] %></span> - <span><%= item[:nickname_nd] %></span>
+            <span class="bold"><%= item[:title_nd] %></span><span><%= item[:nickname_nd] %></span>
           </div>
           <div class="social_media">
-            <a href="http://www.linkedin.com/profile/view?id=216663091" target="_blank" class="linkedin"></a>
-            <a href="https://github.com/ludovicturmel" target="_blank" class="github"></a>
+            <a href="http://www.linkedin.com/profile/view?id=284620713" target="_blank" class="linkedin"></a>
+            <a href="https://github.com/NevilleDubuis" target="_blank" class="github"></a>
           </div>
         </div>
         <p class="describe"><%= item[:nd] %></p>
@@ -102,7 +106,7 @@
         <div class="header">
           <p class="name">Simon Walther</p>
           <div class="title">
-            <span class="bold"><%= item[:title_sw] %></span> - <span><%= item[:nickname_sw] %></span>
+            <span class="bold"><%= item[:title_sw] %></span><span><%= item[:nickname_sw] %></span>
           </div>
           <div class="social_media">
             <a href="https://github.com/simonwalther" target="_blank" class="github"></a>
@@ -116,29 +120,29 @@
 </section>
 <section class="nav_team">
   <article class="avatar row">
-    <div class="col-md-2 active">
+    <div class="col-md-2 active liquid">
       <a href="#" class="lc" data-avatar-value="lc"></a>
       <div data-avatar-value="lc"><p class="name">Intro</p><p class="nickname">Liquid Concept</p></div>
     </div>
     <div class="col-md-2">
       <a href="#" class="yl" data-avatar-value="yl"></a>
-      <div class="border" data-avatar-value="yl"><p class="name">Yann Lugrin</p><p class="nickname">Ruby Enthusiastic Officer</p></div>
+      <div class="border" data-avatar-value="yl"><p class="name">Yann Lugrin</p><p class="nickname"><%= item[:nickname_yl] %></p></div>
     </div>
     <div class="col-md-2">
       <a href="#" class="jh" data-avatar-value="jh"></a>
-      <div class="border" data-avatar-value="jh"><p class="name">Julien Henzelin</p><p class="nickname">Chief Executive Maniac</p></div>
+      <div class="border" data-avatar-value="jh"><p class="name">Julien Henzelin</p><p class="nickname"><%= item[:nickname_jh] %></p></div>
     </div>
     <div class="col-md-2">
       <a href="#" class="lt" data-avatar-value="lt"></a>
-      <div class="border" data-avatar-value="lt"><p class="name">Ludovic Turmel</p><p class="nickname">Minimalist Creator</p></div>
+      <div class="border" data-avatar-value="lt"><p class="name">Ludovic Turmel</p><p class="nickname"><%= item[:title_lt] %></p></div>
     </div>
     <div class="col-md-2">
       <a href="#" class="nd" data-avatar-value="nd"></a>
-      <div class="border" data-avatar-value="nd"><p class="name">Néville Dubuis</p><p class="nickname">Developper Junior</p></div>
+      <div class="border" data-avatar-value="nd"><p class="name">Néville Dubuis</p><p class="nickname"><%= item[:title_nd] %></p></div>
     </div>
     <div class="col-md-2">
       <a href="#" class="sw" data-avatar-value="sw"></a>
-      <div class="border" data-avatar-value="sw"><p class="name">Simon Walter</p><p class="nickname">Padawan Level II</p></div>
+      <div class="border" data-avatar-value="sw"><p class="name">Simon Walter</p><p class="nickname"><%= item[:title_sw] %></p></div>
     </div>
   </article>
 </section>
@@ -155,7 +159,7 @@
     </div>
     <div class="clients_less_important row">
       <div class="container_logo col-md-3"><img src="<%= image_path('client_clarahaskil.png') %>" class="logo" /></div>
-      <div class="container_logo col-md-3"><img src="<%= image_path('client_laurastar.png') %>" class="logo" /></div>
+      <div class="container_logo col-md-3"><img src="<%= image_path('client_jpmguides.png') %>" class="logo jpm" /></div>
       <div class="container_logo col-md-3"><img src="<%= image_path('client_webdoc.png') %>" class="logo" /></div>
       <div class="container_logo col-md-3"><img src="<%= image_path('client_police.png') %>" class="logo" /></div>
     </div>

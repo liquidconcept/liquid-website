@@ -44,12 +44,14 @@
     });
   }
 
+
+
   // init function
   $(function(){
     if (isOfficeOpen()) {
-      $('article.email').css('opacity', '0.3');
+      $('article.email').addClass('opacity');
     } else {
-      $('article.phone').css('opacity', '0.3');
+      $('article.phone').addClass('opacity');
     }
 
     menuAvatar();

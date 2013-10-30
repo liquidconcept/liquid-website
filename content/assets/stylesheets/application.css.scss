@@ -100,6 +100,7 @@ header {
     }
 
     .languages {
+      display: none;
       float: right;
       margin-top: 10px;
 
@@ -123,7 +124,8 @@ header {
   }
 
   section.social_media {
-    width: 655px;
+    /*width: 655px;*/
+    width: 524px;
     margin: 0px auto;
     margin-top: 80px;
     padding-bottom: 40px;
@@ -169,10 +171,12 @@ header {
     }
 
     .blog {
+      display: none;
       @include social_media-sprite(blog);
     }
 
     .blog:hover {
+      display: none;
       @include social_media-sprite(blog_hover);
     }
   }
@@ -191,6 +195,10 @@ header {
     margin: 0 auto;
     margin-bottom: 60px;
     @include pie-clearfix;
+
+    article.find_us {
+      display: none;
+    }
 
     article.corporate {
       margin-bottom: 60px;
@@ -241,6 +249,10 @@ header {
           width: 120px;
           margin: 0 auto;
         }
+      }
+
+      article.opacity {
+        @include opacity(0.3);
       }
     }
   }
@@ -686,6 +698,10 @@ section.clients {
       height: 100px;
       float: left;
       margin-left: 60px;
+
+      .jpm {
+        margin-left: -15px;
+      }
     }
   }
 }
@@ -717,4 +733,10 @@ footer {
     }
   }
 }
+
+/*----------------------------------------*/
+/*               RESPONSIVE               */
+/*----------------------------------------*/
+
+@import "responsive";
 

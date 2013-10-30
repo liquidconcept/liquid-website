@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Liquid Concept - <%= item[:headline] %></title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<%= stylesheet_path 'application' %>" media="screen">
     <script src="<%= javascript_path 'application' %>"></script>
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
@@ -10,7 +13,7 @@
   <header>
     <section class="links">
       <article class="customer_area">
-        <p><a href="https://basecamp.com/" target="_blank"><%= item[:customer_area]%></a></p>
+        <p><a href="https://basecamp.com/1757549" target="_blank"><%= item[:customer_area]%></a></p>
       </article>
       <article class="languages">
         <a href="/fr">Fr</a> | <a href="/en">En</a>
@@ -19,11 +22,13 @@
     <h1><%= item[:headline] %></h1>
     <h2 class="caption"><%= item[:caption] %></h2>
     <section class="social_media">
-      <a href="#" class="twitter"></a>
-      <a href="#" class="linkedin"></a>
-      <a href="#" class="facebook"></a>
-      <a href="#" class="github"></a>
-      <a href="#" class="blog"></a>
+      <div class="wrapper">
+        <a href="https://twitter.com/LiquidConcept" target="_blank" class="twitter"></a>
+        <a href="http://www.linkedin.com/company/liquid-concept" target="_blank" class="linkedin"></a>
+        <a href="https://www.facebook.com/LiquidConcept" target="_blank" class="facebook"></a>
+        <a href="https://github.com/liquidconcept" target="_blank" class="github"></a>
+        <a href="#" target="_blank" class="blog"></a>
+      </div>
     </section>
   </header>
   <body>
