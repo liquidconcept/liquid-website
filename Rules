@@ -45,6 +45,11 @@ route %r{/assets/[^/]+/[^/]+/.+/} do
   # ignonre sub-folders
 end
 
+image_sub_folders = Dir[File.expand_path('../content/assets/images', __FILE__) + '/*/'].map {|path| File.basename(path) }.join('|')
+route %r{/assets/images/(#{image_sub_folders})-[a-z0-9]+/} do
+  item.identifier.gsub(%r{images/(.+?)/$}, '\1') + '.' + item[:extension]
+end
+
 route %r{/assets/.+/} do
   Nanoc::Helpers::Sprockets.asset_path(item)
 end
