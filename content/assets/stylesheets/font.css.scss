@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'katarine';
-  src: url('katarine-eot.eot');
-  src: url('katarine-woff.woff') format('woff'), 
-       url('katarine-ttf.ttf')  format('truetype');
+  src: asset-url('katarine-eot.eot');
+  src: asset-url('katarine-woff.woff') format('woff'), 
+       asset-url('katarine-ttf.ttf')  format('truetype');
 }
