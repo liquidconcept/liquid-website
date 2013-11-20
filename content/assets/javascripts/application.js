@@ -1,6 +1,7 @@
 //= require jquery
 //= require jquery-ui
 //= require modernizr
+//= require respond
 //= require moment
 //= require underscore
 //= require slider
