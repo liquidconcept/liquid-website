@@ -10,7 +10,7 @@
     <script src="<%= javascript_path 'application' %>"></script>
     <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
   </head>
-  <header>
+  <div id="header">
     <section class="links">
       <article class="customer_area">
         <p><a href="https://basecamp.com/1757549" target="_blank"><%= item[:customer_area]%></a></p>
@@ -30,7 +30,7 @@
         <a href="#" target="_blank" class="blog"></a>
       </div>
     </section>
-  </header>
+  </div>
   <body>
     <div id="main">
       <%= yield %>
