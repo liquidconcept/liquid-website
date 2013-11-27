@@ -1,8 +1,9 @@
-// =require jquery
-// =require jquery-ui
-// =require jquery.h5validate
+//= require jquery
+//= require jquery-ui
+//= require modernizr
+//= require respond
 //= require moment
-// =require underscore
+//= require underscore
 //= require slider
 
 (function($, undefined) {

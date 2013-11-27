@@ -63,8 +63,8 @@ data_sources:
         # list of availables locale, ser default to true to select default
         # locale.
         availables:
-          en:
-            name: "English"
+          # en:
+          #   name: "English"
           fr:
             name: "Francais"
             default: true
