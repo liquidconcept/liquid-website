@@ -27,10 +27,9 @@ _.extend(Slider.prototype, {
     $('.nav_team a').on('click', function(event) {
       event.preventDefault();
 
-      var index = $(this).parent().siblings().andSelf().index($(this).parent());
-
+      var index = $(this).parents('.row').siblings().andSelf().children().index($(this).parent());
       var next_item = $('.member').slice(index, index + 1);
-      
+
       if ($(window).width() < 960) {} else {
         that.slide(next_item);
       }
