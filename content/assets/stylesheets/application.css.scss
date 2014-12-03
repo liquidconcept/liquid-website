@@ -335,6 +335,10 @@ h2 {
           margin-left: 30px;
         }
 
+        img.aa {
+          margin-left: 80px;
+        }
+
         .information {
           width: 540px;
           padding-left: 40px;
@@ -521,6 +525,30 @@ h2 {
           }
         }
       }
+
+      article.aa {
+        display: none;
+
+        .social_media {
+          .linkedin {
+            @include small_social_media-sprite(linkedin);
+          }
+
+          .linkedin:hover {
+            @include small_social_media-sprite(linkedin_hover);
+          }
+
+          .github {
+            margin-left: 10px;
+            @include small_social_media-sprite(github);
+          }
+
+          .github:hover {
+            margin-left: 10px;
+            @include small_social_media-sprite(github_hover);
+          }
+        }
+      }
     }
   }
 
@@ -528,10 +556,13 @@ h2 {
     margin: 10px 0px 80px 0px;
 
     article.avatar {
-      width: 960px;
+      width: 685px;
+      margin: 0 auto;
+      margin-left: 120px;
 
       div.col-md-2 {
         height: 180px;
+        width: 170px !important;
 
         a {
           width: 100px;
@@ -566,6 +597,14 @@ h2 {
             color: $dark_grey;
           }
         }
+
+        .border[data-avatar-value="nd"] {
+          border-left: none;
+        }
+      }
+
+      .center {
+        margin-left: 97px;
       }
 
       div.col-md-2.active {
@@ -591,6 +630,10 @@ h2 {
 
         .sw {
           @include avatar-sprite(sw_hover);
+        }
+
+        .aa {
+          @include avatar-sprite(aa_hover);
         }
 
         p {
@@ -656,6 +699,16 @@ h2 {
       .sw:hover {
         margin-left: 15px;
         @include avatar-sprite(sw_hover);
+      }
+
+      .aa {
+        margin-left: 15px;
+        @include avatar-sprite(aa);
+      }
+
+      .aa:hover {
+        margin-left: 15px;
+        @include avatar-sprite(aa_hover);
       }
     }
   }

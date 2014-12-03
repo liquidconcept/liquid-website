@@ -31,7 +31,7 @@
   var menuAvatar = function() {
     var active_avatar = $('.avatar').find('a.active');
 
-    $('.avatar > .col-md-2 > a').mouseover(function() {
+    $('.avatar .col-md-2 > a').mouseover(function() {
       var current_avatar = $(this).data('avatarValue');
       var current_avatar_name = $(".avatar .col-md-2 div[data-avatar-value='"+ current_avatar +"']");
 

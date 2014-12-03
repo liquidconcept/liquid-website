@@ -217,6 +217,11 @@
 
       article.avatar {
         width: $width_out;
+        margin-left: 55px !important;
+
+        .center {
+          margin-left: 0px !important;
+        }
       }
     }
   }
@@ -292,15 +297,7 @@
     float: left;
     width: 160px;
 
-    .border[data-avatar-value="yl"] {
-      border-left: none !important;
-    }
-
-    .border[data-avatar-value="lt"] {
-      border-left: none !important;
-    }
-
-    .border[data-avatar-value="sw"] {
+    .border {
       border-left: none !important;
     }
   }
@@ -334,7 +331,7 @@
   }
 
   footer {
-    margin-top: 485px 
+    margin-top: 485px
     !important;
   }
 
@@ -350,7 +347,11 @@
       border-left: none !important;
     }
 
-    .border[data-avatar-value="nd"] {
+    .border[data-avatar-value="lt"] {
+      border-left: none !important;
+    }
+
+    .border[data-avatar-value="sw"] {
       border-left: none !important;
     }
   }
@@ -399,7 +400,7 @@
       border-left: none !important;
     }
 
-    .border[data-avatar-value="sw"] {
+    .border[data-avatar-value="nd"] {
       border-left: none !important;
     }
   }

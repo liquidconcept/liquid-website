@@ -115,35 +115,55 @@
         <p class="describe"><%= item[:sw] %></p>
       </div>
     </article>
+    <article class="member aa">
+      <div class="picture"><img src="<%= image_path('aa.png') %>" class="aa" /></div>
+      <div class="information">
+        <div class="header">
+          <p class="name">Alban Allée</p>
+          <div class="title">
+            <span class="bold"><%= item[:title_aa] %></span><span><%= item[:nickname_aa] %></span>
+          </div>
+          <div class="social_media">
+            <a href="https://fr.linkedin.com/in/aallee" target="_blank" class="linkedin"></a>
+            <a href="https://github.com/albanallee" target="_blank" class="github"></a>
+          </div>
+        </div>
+        <p class="describe"><%= item[:aa] %></p>
+      </div>
+    </article>
   </section>
   <nav class="next"><a href="#"></a></nav>
 </section>
 <section class="nav_team">
   <article class="avatar row">
-    <div class="col-md-2 active liquid">
-      <a href="#" class="lc" data-avatar-value="lc"></a>
-      <div data-avatar-value="lc"><p class="name">Intro</p><p class="nickname">Liquid Concept</p></div>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="yl" data-avatar-value="yl"></a>
-      <div class="border" data-avatar-value="yl"><p class="name">Yann Lugrin</p><p class="nickname"><%= item[:nickname_yl] %></p></div>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="jh" data-avatar-value="jh"></a>
-      <div class="border" data-avatar-value="jh"><p class="name">Julien Henzelin</p><p class="nickname"><%= item[:nickname_jh] %></p></div>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="lt" data-avatar-value="lt"></a>
-      <div class="border" data-avatar-value="lt"><p class="name">Ludovic Turmel</p><p class="nickname"><%= item[:title_lt] %></p></div>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="nd" data-avatar-value="nd"></a>
-      <div class="border" data-avatar-value="nd"><p class="name">Néville Dubuis</p><p class="nickname"><%= item[:title_nd] %></p></div>
-    </div>
-    <div class="col-md-2">
-      <a href="#" class="sw" data-avatar-value="sw"></a>
-      <div class="border" data-avatar-value="sw"><p class="name">Simon Walter</p><p class="nickname"><%= item[:title_sw] %></p></div>
-    </div>
+      <div class="col-md-2 active liquid">
+        <a href="#" class="lc" data-avatar-value="lc"></a>
+        <div data-avatar-value="lc"><p class="name">Intro</p><p class="nickname">Liquid Concept</p></div>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="yl" data-avatar-value="yl"></a>
+        <div class="border" data-avatar-value="yl"><p class="name">Yann Lugrin</p><p class="nickname"><%= item[:nickname_yl] %></p></div>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="jh" data-avatar-value="jh"></a>
+        <div class="border" data-avatar-value="jh"><p class="name">Julien Henzelin</p><p class="nickname"><%= item[:nickname_jh] %></p></div>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="lt" data-avatar-value="lt"></a>
+        <div class="border" data-avatar-value="lt"><p class="name">Ludovic Turmel</p><p class="nickname"><%= item[:title_lt] %></p></div>
+      </div>
+      <div class="col-md-2 center">
+        <a href="#" class="nd" data-avatar-value="nd"></a>
+        <div class="border" data-avatar-value="nd"><p class="name">Néville Dubuis</p><p class="nickname"><%= item[:title_nd] %></p></div>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="sw" data-avatar-value="sw"></a>
+        <div class="border" data-avatar-value="sw"><p class="name">Simon Walter</p><p class="nickname"><%= item[:title_sw] %></p></div>
+      </div>
+      <div class="col-md-2">
+        <a href="#" class="aa" data-avatar-value="aa"></a>
+        <div class="border" data-avatar-value="aa"><p class="name">Alban Allée</p><p class="nickname"><%= item[:title_aa] %></p></div>
+      </div>
   </article>
 </section>
 <div class="line"></div>
